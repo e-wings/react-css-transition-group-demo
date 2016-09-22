@@ -1,0 +1,32 @@
+.container { max-width: 400px; }
+h2::before { content: '- ' }
+
+.example-enter {
+  opacity: 0.01;
+  //position: absolute;
+  //top: -2em;
+}
+
+.example-enter.example-enter-active {
+  //top: 10em;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.example-leave {
+  opacity: 1;
+}
+
+.example-leave.example-leave-active {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.example-appear {
+  opacity: 0.01;
+  transition: opacity .5s ease-in;
+}
+
+.example-appear.example-appear-active {
+  opacity: 1;
+}
